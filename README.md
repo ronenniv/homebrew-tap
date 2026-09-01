@@ -17,3 +17,12 @@ Auto update CLI to the latest version by this command:
 ```bash
 brew upgrade
 ```
+
+## MDReader
+
+Native macOS markdown reader/editor ([source](https://github.com/ronenniv/md-reader)):
+
+```bash
+brew tap ronenniv/tap
+brew install --cask --no-quarantine mdreader
+```
