@@ -28,8 +28,9 @@ cask "mdreader" do
   end
 
   caveats <<~EOS
-    Releases are currently ad-hoc signed. Install with:
-      brew install --cask --no-quarantine mdreader
-    or approve the app via right-click -> Open on first launch.
+    Releases are currently ad-hoc signed. After installing, remove the
+    quarantine flag BEFORE first launch:
+      xattr -dr com.apple.quarantine /Applications/MDReader.app
+    (This step goes away once releases are notarized.)
   EOS
 end

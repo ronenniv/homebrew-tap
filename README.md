@@ -24,5 +24,7 @@ Native macOS markdown reader/editor ([source](https://github.com/ronenniv/md-rea
 
 ```bash
 brew tap ronenniv/tap
-brew install --cask --no-quarantine mdreader
+brew trust ronenniv/tap
+brew install --cask mdreader
+xattr -dr com.apple.quarantine /Applications/MDReader.app
 ```
